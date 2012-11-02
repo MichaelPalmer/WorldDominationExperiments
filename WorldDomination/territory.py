@@ -1,5 +1,5 @@
 
-def checkforbadinput(input,resource):
+def correctforbadinput(input,resource):
     if resource == 0: return 0
     if input > resource: return resource
     return input
