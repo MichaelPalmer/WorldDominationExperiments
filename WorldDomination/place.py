@@ -122,6 +122,10 @@ class testterritory(unittest.TestCase):
     def getAustralias(self):
         ter0 = territory(0,'Western Australia',5,6,.1) 
         ter1 = territory(1,'Eastern Australia',3,9,.2)
+        ter0.physicalNeighbors.append(ter1)
+        ter1.physicalNeighbors.append(ter0)
+        ter0.updateNeighbors()
+        ter1.updateNeighbors()
         return (ter0,ter1)
     def test_basiccreate(self):
         ter = territory(0,'Western Australia',5,6,.1) 

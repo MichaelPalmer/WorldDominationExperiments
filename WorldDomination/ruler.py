@@ -19,7 +19,7 @@ class agent(object):
     def trade(self):
         pass
     
-    def acceptTrade(self,offerer, demand, typeDemand, offer, typeOffer):
+    def allowTrade(self,offerer, demand, typeDemand, offer, typeOffer):
         pass
     
     def chooseTax(self):
